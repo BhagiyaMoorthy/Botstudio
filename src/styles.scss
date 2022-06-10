@@ -1,1 +1,271 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #8294a1;
+	font-size: 14px;
+	background: #edf2f5;
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+}
+.sidebar{
+	width: 60px;
+	background: blue;
+	height: auto;	
+}
+.brand{
+	padding: .5rem 0 1rem 0;
+	text-align: center;
+	width: 100%;
+}
+.logo{
+	width: 44px;
+}
+.side-menu{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	overflow-y: auto;
+	scrollbar-width: none;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 68px);
+}
+.side-menu::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;	
+}
+.side-menu li{
+	display: block;	
+}
+.side-menu li a{
+	color: #fff;
+	padding: 1rem .5rem;
+	font-size: 24px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	opacity: .6;
+}
+.side-menu li a.active, .side-menu li a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.content{
+	width: calc(100% - 60px);
+}
+.sub-content{
+	display: flex;
+	justify-content: space-between;
+}
+.header-navbar{
+	width: 100%;
+	padding: .5rem 1rem;
+	background: gray;
+	display: flex;
+	justify-content: space-between;
+}
+.header-navbar .title{
+	color: black;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+.header-navbar .error-msg{
+	padding: 0;
+	margin: 0;
+    color: black;
+}
+.header-navbar .error-msg li{
+	display: inline-block;
+	font-size: 15px;
+	margin-left: 1rem;
+    
+}
+.header-navbar .error-msg li span{
+	font-size: 13px;
+	margin-left:5px;
+	font-weight: 600;
+}
+.listing{
+	width: calc(100% - 300px);	
+}
+.listing .bot-listing{
+	padding: 0;
+	margin: 0;
+}
+.listing .bot-listing li{
+	display: inline-block;
+}
+.listing .bot-holder{
+	width: 60px;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+.listing  .bot-holder .title{
+	font-size: 11px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: .5rem;
+	color:black;
+}
+.listing  .bot-holder .bot-icon{
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	color: #78c7f5;
+	line-height: 60px;
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+.listing-body{
+	height: calc(100vh - 44px - 37px);
+	padding: 1rem;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+.listing-body::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;	
+}
+.listing-footer{
+	background: #fff;
+	padding:.5rem 1rem;
+}
+.btn-blue, .btn-blue:hover, .btn-blue:active{
+	background:  blue !important;
+	color: #fff !important;
+	padding: .25rem .5rem;
+	font-size: 12px;
+	border:none;
+}
+.category-section{
+	height: calc(100vh - 37px);
+	width: 300px;
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.category-title{
+	height: calc(100% - 38px);
+	border-left: 1px solid #e3e8eb;
+	overflow-y: auto;
+	scrollbar-width: none;
+	width: 80px;
+}
+.category-title::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;	
+}
+.category-title ul{
+	padding: 0;
+	margin: 0;	
+}
+.category-title ul li{
+	border-bottom: 1px solid #edf2f5;
+}
+.category-title ul li a{
+	display: block;
+	padding: .90rem;
+	color: blue;
+	text-decoration: none;
+	text-align: center;
+}
+.category-title ul li:hover a{
+	color: blue;
+	background: rgba(225,241,253,0.5);	
+}
+.category-title ul li a.active{
+	color: blue;
+	background: rgba(225,241,253,0.5);
+	border-right: 3px solid #78c7f5;
+}
+.category-title ul li a i{
+	font-size: 24px;
+	margin-bottom: .25rem;
+}
+.category-title ul li a small{
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	font-size: 11px;	
+}
+.category-list{
+	height: calc(100% - 38px);
+	border-left: 1px solid #e3e8eb;
+	overflow-y: auto;
+	scrollbar-width: none;
+	width: 220px;
+	background: rgba(225,241,253,0.5);
+}
+.category-list::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;	
+}
+.category-list ul{
+	padding: 0;
+	margin: 0;	
+}
+.category-list ul li{
+	border-bottom: 1px solid #edf2f5;
+}
+.category-list ul li a{
+	display: block;
+	padding: .5rem .75rem;
+	color: #8294a1;
+	text-decoration: none;
+}
+.category-list ul li a h6{
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.category-list ul li a small{
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	font-size: 11px;
+	color: #a4b6c3;
+}
+.category-list ul li:hover a{
+	color: #78c7f5;	
+}
+.category-search{	
+	width: 100%;
+	border-bottom: 1px solid #ced4da;
+}
+.category-search .input-group-text{
+	background: none;
+	border:none;
+	border-radius: 0;	
+	color: #8294a1;
+
+	
+}
+.category-search .form-control{
+	border:none;
+	border-radius: 0;
+	font-size: 13px;
+	padding: 0.55rem 0 .55rem 0;
+	color: #edf2f5;
+}
+.category-search .form-control:focus{
+	box-shadow: none;
+
+}
+
+
+
+
+
